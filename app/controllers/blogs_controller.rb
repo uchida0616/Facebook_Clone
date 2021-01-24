@@ -8,8 +8,12 @@ class BlogsController < ApplicationController
   end
 
   def create
-    Blog.create(blog_params)
-    redirect_to new_blog_path
+    @blog = Blog.create(blog_params)
+    if @blog.save
+      redirect_to new_blog_path
+    else
+      render :new
+    end
   end
 
   def show

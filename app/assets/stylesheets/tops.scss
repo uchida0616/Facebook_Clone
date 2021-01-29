@@ -1,0 +1,61 @@
+header {
+  width: 100%;
+  background-color: #C0C0C0;
+  height: 54px;
+  margin: 0
+}
+#nav-home-tab {
+  color: white;
+  font-size: 45px;
+  padding-right: 8px;
+}
+.circle{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4689FF;
+  text-align:center;
+  line-height: 60px;
+  font-size:3em;
+  font-weight:bold;
+}
+.nav-link{
+  color: white;
+  font-size: 45px;
+  padding-left: 15px;
+}
+.login {
+  text-align: center;
+}
+.login-btn{
+  color: #fff;
+  background-color: #f56500;
+  border-bottom: 5px solid #b84c00;
+  font-size: 25px;
+}
+.login-btn:hover{
+  margin-top: 3px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}
+login-btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+.header {
+  font-size: 40px;
+  background: -webkit-linear-gradient(#cff, #39f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-right: 600px;
+  padding-bottom: 5px;
+}
+.text-login{
+  font-size: 30px;
+  color: #008BBB;
+}
+.login-field{
+}

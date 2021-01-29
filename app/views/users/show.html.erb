@@ -1,3 +1,4 @@
 <h1><%= @user.name %>のページ</h1>
 <p>メールアドレス: <%= @user.email %></p>
-<%= link_to "ブログ一覧画面へ行く", blogs_path %>
+<br>
+<%= link_to '新しくブログを投稿する', new_blog_path, class: "article-site" %>

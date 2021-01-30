@@ -9,18 +9,26 @@
       </ul>
     </div>
   <% end %>
-  <div class="blog_title">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  <div class="blog">
+    <div class="blog_title">
+      <%= form.label :title, "タイトル" %>
+      <%= form.text_field :title %>
+    </div>
+    <br>
+    <div class="blog_field">
+      <p><%= form.label :image, "画像" %></p>
+      <p><%= form.file_field :image, class: "image_form" %></p>
+    </div>
+    <br>
+    <div class="blog_title">
+      <%= form.label :content, "本文" %>
+      <%= form.text_field :content %>
+    </div>
   </div>
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image %>
+  <br>
+  <div class="create">
+    <%= form.submit "Create Blog", class: "create-btn" %>
   </div>
-  <div class="blog_title">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
-  </div>
-  <%= form.submit %>
 <% end %>
+<br>
 <%= link_to "ブログ一覧画面にもどる", blogs_path, class: "article-site" %>

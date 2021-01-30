@@ -1,5 +1,5 @@
 <div class="header">
-  <h1>Sign up</h1>
+  <h1>新規登録</h1>
 </div>
 <% if @user.errors.any? %>
   <div id="error_explanation">
@@ -13,16 +13,21 @@ saved:</h2>
   </div>
 <% end %>
 <%= form_with(model: @user, local: true) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :email %>
-  <%= f.email_field :email %>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
+  <div class="login">
+    <%= f.label :name,"名前", class: "text-login" %>
+    <%= f.text_field :name %>
+    <br></br>
+    <%= f.label :email,"メールアドレス", class: "text-login" %>
+    <%= f.email_field :email, class: "login-field" %>
+    <br></br>
+    <%= f.label :password,"パスワード", class: "text-login" %>
+    <%= f.password_field :password, class: "login-field" %>
+    <br></br>
+    <%= f.label :password_confirmation,"パスワードの確認", class: "text-login" %>
+    <%= f.password_field :password_confirmation, class: "login-field" %>
+  </div>
   <br></br>
   <div class="login">
-    <%= f.submit "Create my account", class: "login-btn" %>
+    <%= f.submit "アカウント作成", class: "login-btn" %>
   </div>
 <% end %>

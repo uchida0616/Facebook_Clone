@@ -1,3 +1,41 @@
 .article-site{
   font-size: 30px;
 }
+.blog_title{
+  font-size: 30px;
+  color: #008BBB;
+}
+.blog_field{
+  font-size: 30px;
+  color: #008BBB;
+}
+.blog_field p{
+  display: inline-block;
+}
+.blog{
+   text-align: center;
+}
+.create{
+  text-align: center;
+}
+.create-btn{
+  color: #fff;
+  background-color: #f56500;
+  border-bottom: 5px solid #b84c00;
+  font-size: 25px;
+}
+.create-btn:hover{
+  margin-top: 3px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}
+create-btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+.image_form{
+        border-style: solid;
+        text-align: center;
+      }

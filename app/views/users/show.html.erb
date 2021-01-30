@@ -6,4 +6,6 @@
   <p>メールアドレス: <%= @user.email %></p>
 </div>
 <br>
-<%= link_to '新しくブログを投稿する', new_blog_path, class: "article-site" %>
+<div class="blog-url">
+  <%= link_to '新しくブログを投稿する', new_blog_path, class: "cp_link" %>
+</div>

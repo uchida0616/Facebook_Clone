@@ -1,5 +1,18 @@
-<h1>ブログ詳細画面</h1>
-<p>タイトル: <%= @blog.title %></p>
-<p><%= image_tag @blog.image.url %></p>
-<p>内容: <%= @blog.content %></p>
-<%= link_to "ブログ一覧画面にもどる", blogs_path, class: "article-site" %>
+<div class="header">
+  <h1>ブログ詳細画面</h1>
+</div>
+<div class="title_text">
+  <p>タイトル: <%= @blog.title %></p>
+</div>
+<div class="image_area">
+  <div class="image">
+    <p><%= image_tag @blog.image.url %></p>
+  </div>
+</div>
+<div class="content_text">
+  <p>内容: <%= @blog.content %></p>
+</div>
+<br>
+<div class="blog-url">
+  <%= link_to "ブログ一覧画面にもどる", blogs_path, class: "cp_link" %>
+</div>

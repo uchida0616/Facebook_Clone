@@ -1,16 +1,14 @@
-<table border="1">
-<div class="header">
-  <caption>ブログ一覧</caption>
-  </div>
-  <colgroup align="center">
-  <thead>
-    <tr>
-      <th>ユーザー名</th>
-      <th>タイトル</th>
-      <th>内容</th>
-    </tr>
-  </thead>
-  <tfoot>
+<table border="1", class="blog-all">
+<caption>ブログ一覧</caption>
+<colgroup align="center">
+<thead>
+  <tr>
+    <th>ユーザー名</th>
+    <th>タイトル</th>
+    <th>内容</th>
+  </tr>
+</thead>
+<tfoot>
   <% @blogs.each do |blog| %>
     <tr>
       <td><%= blog.user.name %></td>
@@ -21,7 +19,9 @@
       <td><%= link_to 'ブログを削除する', blog_path(blog.id), method: :delete ,data: { confirm: '本当に削除していいですか？' }%></td>
     </tr>
   <% end %>
-  </tfoot>
+</tfoot>
 </table>
 <br>
-<%= link_to '新しくブログを投稿する', new_blog_path, class: "article-site" %>
+<div class="blog-url">
+  <%= link_to '新しくブログを投稿する', new_blog_path, class: "cp_link" %>
+</div>

@@ -1,5 +1,9 @@
-.article-site{
-  font-size: 30px;
+body{
+       /* 背景色指定 */
+    background-color:#F5F5F5;
+    }
+.blog-url{
+  text-align: center;
 }
 .blog_title{
   font-size: 30px;
@@ -39,3 +43,39 @@ create-btn--shadow {
         border-style: solid;
         text-align: center;
       }
+table.blog-all{
+  width: 100%;
+	margin:1em 0 3em;
+	border-top: 1px solid #0000CD;
+	border-left: 1px solid #0000CD;
+	border-spacing:0px;
+}
+table.blog-all caption {
+	font-size: 40px;
+	font-weight: bold;
+	width: 100%;
+	border-bottom: 1px dotted #6f87ff;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #6f87ff;
+	}
+  table.blog-all tr th, table.blog-all tr td {
+  	text-align: center;
+  	font-size: 15px;
+  	border-bottom: 1px solid #0000CD;
+  	border-right: 1px solid #0000CD;
+  	padding: 3px;
+  	}
+    .cp_link {
+    	padding: 0.1em 0.3em;
+    	background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, rgba(44,124,255,1) 50%);
+    	background-position: 0 0;
+    	background-size: 200% auto;
+    	transition: .3s;
+    	color: #2C7CFF;
+      font-size: 30px;
+    }
+    .cp_link:hover {
+    	background-position: -100% 0;
+    	color: #fff;
+    }

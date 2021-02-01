@@ -3,13 +3,13 @@
 </div>
 <%= form_with(scope: :session, url:sessions_path, local:true) do |f| %>
   <div class="login">
-    <%= f.label :email, class: "text-login" %>
-    <%= f.email_field :email, class: "login-field" %>
-    <%= f.label :password, class: "text-login" %>
-    <%= f.password_field :password, class: "login-field" %>
+    <%= f.label :email, class: "text_login" %>
+    <%= f.email_field :email, class: "login_field" %>
+    <%= f.label :password, class: "text_login" %>
+    <%= f.password_field :password, class: "login_field" %>
   </div>
   <br></br>
   <div class="login">
-    <%= f.submit "Log in", class: "login-btn" %>
+    <%= f.submit "Log in", class: "login_btn" %>
   </div>
 <% end %>

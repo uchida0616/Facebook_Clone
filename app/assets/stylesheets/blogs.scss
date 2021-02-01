@@ -2,7 +2,7 @@ body{
        /* 背景色指定 */
     background-color:#F5F5F5;
     }
-.blog-url{
+.blog_url{
   text-align: center;
 }
 .blog_title{
@@ -22,13 +22,13 @@ body{
 .create{
   text-align: center;
 }
-.create-btn{
+.create_btn{
   color: #fff;
   background-color: #f56500;
   border-bottom: 5px solid #b84c00;
   font-size: 25px;
 }
-.create-btn:hover{
+.create_btn:hover{
   margin-top: 3px;
   color: #fff;
   background: #f56500;
@@ -43,14 +43,14 @@ create-btn--shadow {
         border-style: solid;
         text-align: center;
       }
-table.blog-all{
+table.blog_all{
   width: 100%;
 	margin:1em 0 3em;
 	border-top: 1px solid #0000CD;
 	border-left: 1px solid #0000CD;
 	border-spacing:0px;
 }
-table.blog-all caption {
+table.blog_all caption {
 	font-size: 40px;
 	font-weight: bold;
 	width: 100%;
@@ -59,7 +59,7 @@ table.blog-all caption {
 	text-align: center;
 	color: #6f87ff;
 	}
-  table.blog-all tr th, table.blog-all tr td {
+  table.blog_all tr th, table.blog-all tr td {
   	text-align: center;
   	font-size: 15px;
   	border-bottom: 1px solid #0000CD;

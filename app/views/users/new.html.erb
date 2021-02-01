@@ -14,20 +14,20 @@ saved:</h2>
 <% end %>
 <%= form_with(model: @user, local: true) do |f| %>
   <div class="login">
-    <%= f.label :name,"名前", class: "text-login" %>
+    <%= f.label :name,"名前", class: "text_login" %>
     <%= f.text_field :name %>
     <br></br>
-    <%= f.label :email,"メールアドレス", class: "text-login" %>
-    <%= f.email_field :email, class: "login-field" %>
+    <%= f.label :email,"メールアドレス", class: "text_login" %>
+    <%= f.email_field :email, class: "login_field" %>
     <br></br>
-    <%= f.label :password,"パスワード", class: "text-login" %>
-    <%= f.password_field :password, class: "login-field" %>
+    <%= f.label :password,"パスワード", class: "text_login" %>
+    <%= f.password_field :password, class: "login_field" %>
     <br></br>
-    <%= f.label :password_confirmation,"パスワードの確認", class: "text-login" %>
-    <%= f.password_field :password_confirmation, class: "login-field" %>
+    <%= f.label :password_confirmation,"パスワードの確認", class: "text_login" %>
+    <%= f.password_field :password_confirmation, class: "login_field" %>
   </div>
   <br></br>
   <div class="login">
-    <%= f.submit "アカウント作成", class: "login-btn" %>
+    <%= f.submit "アカウント作成", class: "login_btn" %>
   </div>
 <% end %>

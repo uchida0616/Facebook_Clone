@@ -8,31 +8,25 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body　bgcolor="#10100E" >
     <header>
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <div class="circle">
-            <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">F</a>
-          </div>
+      <h1 class="block-tit">facebook</h1>
           <% if logged_in? %>
-              <%= link_to "Profile", user_path(current_user.id), class: "nav-link" %>
-              <%= link_to "Logout", session_path(current_user.id), method: :delete, class: "nav-link" %>
+          <div class="head-link">
+            <%= link_to "プロフィール", user_path(current_user.id), class: "profile-link" %>
+            <%= link_to "ログアウト", session_path(current_user.id), method: :delete, class: "logout-link" %>
+          </div>
           <% else %>
-            <%= link_to "Sign up", new_user_path, class: "nav-link" %>
-            <%= link_to "Login", new_session_path, class: "nav-link" %>
+          <div class="head-link">
+            <%= link_to "新規登録", new_user_path, class: "signup-link" %>
+            <%= link_to "ログイン", new_session_path, class: "login-link" %>
+          </div>
           <% end %>
           <% flash.each do |key, value| %>
             <%= content_tag(:div, value, class: "#{key}")%>
           <% end %>
           <%= yield %>
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-      </div>
     </header>
-  </body>
+    <footer>
+      <p>Facebook lnc.<p>
+    </footer>
 </html>

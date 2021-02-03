@@ -1,15 +1,27 @@
-<div class="header">
-  <h1>Login</h1>
+<div class="login-header">
+  <h1 class="heading">ログイン</h1>
+  <h2 class="note">入力してください</h2>
 </div>
 <%= form_with(scope: :session, url:sessions_path, local:true) do |f| %>
   <div class="login">
-    <%= f.label :email, class: "text_login" %>
-    <%= f.email_field :email, class: "login_field" %>
-    <%= f.label :password, class: "text_login" %>
-    <%= f.password_field :password, class: "login_field" %>
-  </div>
-  <br></br>
-  <div class="login">
-    <%= f.submit "Log in", class: "login_btn" %>
+    <div class="text-area">
+      <div class="email-tag">
+        <%= f.label :email, class: "email-text" %>
+      </div>
+      <div class="password-tag">
+        <%= f.label :password, class: "password-text" %>
+      </div>
+    </div>
+    <div class="email">
+      <%= f.email_field :email, class: "email_field" %>
+    </div>
+    <div class="password">
+      <%= f.password_field :password, class: "password_field" %>
+    </div>
+      <%= f.submit "ログイン", class: "login_btn" %>
   </div>
 <% end %>
+<div class="signup">
+  <p>アカウントをお持ちでない方</p>
+  <%= link_to "アカウント作成", new_user_path %>
+</div>

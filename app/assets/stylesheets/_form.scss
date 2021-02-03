@@ -1,0 +1,51 @@
+
+.title-tag {
+  color: gray;
+}
+.title-text {
+  font-weight: normal;
+}
+.title-field {
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: 1px solid gray;
+  height: 40px;
+  padding: 4px 8px 5px;
+  width: 95%;
+}
+.content-tag {
+  color: gray;
+}
+.content-text {
+  font-weight: normal;
+}
+.content-field {
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: 1px solid gray;
+  height: 120px;
+  padding: 4px 8px 5px;
+  width: 95%;
+}
+.image_tag {
+  color: gray;
+}
+.image-text {
+  font-weight: normal;
+}
+.image-form {
+  display: none;
+}
+.create-btn {
+  color: white;
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: none;
+  background-color: #E4E6EB;
+  height: 30px;
+  padding: 4px 8px 5px;
+  width: 95%;
+}
+.create-btn:hover {
+  background-color: #1877F2;
+}

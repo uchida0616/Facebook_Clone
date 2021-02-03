@@ -1,11 +1,29 @@
 <div class="header">
-  <h1><%= @user.name %>のページ</h1>
+  <h1 class="user-name"><%= @user.name %></h1>
 </div>
 <br>
-<div class="user_info">
-  <p>メールアドレス: <%= @user.email %></p>
+<div class="user-info-box">
+  <div class="user-info">
+    <p class="info-text">メールアドレス<p>
+    <p class="info-mail"><%= @user.email %></p>
+  </div>
 </div>
 <br>
-<div class="blog_url">
-  <%= link_to '新しくブログを投稿する', new_blog_path, class: "cp_link" %>
+<div class="user-info-box">
+  <div class="blog-box">
+    <div class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#136FFF" class="bi bi-plus-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+    </svg>
+  </div>
+  <div class="new-blog">
+    <div class="new-blog-link">
+      <%= link_to '新しいブログを投稿', new_blog_path, class: "blog-link" %>
+    </div>
+    <div class="new-blog-text">
+      <p>写真やメッセージを投稿しよう</p>
+    </div>
+  </div>
+  </div>
 </div>

@@ -1,10 +1,12 @@
-<div class="header">
+<div class="signup-header">
   <h1>新規登録</h1>
+  <h9>入力してください</h4>
 </div>
 <% if @user.errors.any? %>
   <div id="error_explanation">
-    <h2><%= pluralize(@user.errors.count,"error") %> prohibited this <%= @user.name %> from being
-saved:</h2>
+    <h2 class="error-massage">
+      <%= pluralize(@user.errors.count,"箇所のエラー") %> があります。 <%= @user.name %>
+    </h2>
     <ul>
     <% @user.errors.full_messages.each do |message| %>
       <li><%= message %></li>
@@ -13,18 +15,34 @@ saved:</h2>
   </div>
 <% end %>
 <%= form_with(model: @user, local: true) do |f| %>
-  <div class="login">
-    <%= f.label :name,"名前", class: "text_login" %>
-    <%= f.text_field :name %>
+  <div class="signup-field">
+    <div class="name-tag">
+      <%= f.label :name,"お名前", class: "login-name" %>
+    </div>
+    <div class="new-name">
+      <%= f.text_field :name, class: "name-field" %>
+    </div>
     <br></br>
-    <%= f.label :email,"メールアドレス", class: "text_login" %>
-    <%= f.email_field :email, class: "login_field" %>
+    <div class="email-new-tag">
+      <%= f.label :email,"メールアドレス", class:"login-email" %>
+    </div>
+    <div class="new-email">
+      <%= f.email_field :email, class: "new-email-field" %>
+    </div>
     <br></br>
-    <%= f.label :password,"パスワード", class: "text_login" %>
-    <%= f.password_field :password, class: "login_field" %>
+    <div class="password-new-tag">
+      <%= f.label :password,"パスワード", class: "login-password" %>
+    </div>
+    <div class="new-password">
+      <%= f.password_field :password, class: "new-password-field" %>
+    </div>
     <br></br>
-    <%= f.label :password_confirmation,"パスワードの確認", class: "text_login" %>
-    <%= f.password_field :password_confirmation, class: "login_field" %>
+    <div class="password-confirmation-tag">
+      <%= f.label :password_confirmation,"パスワードの確認", class: "login-password-confirmation" %>
+    </div>
+    <div class="password-confirmation">
+      <%= f.password_field :password_confirmation, class: "password-confirmation-field" %>
+    </div>
   </div>
   <br></br>
   <div class="login">

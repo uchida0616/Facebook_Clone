@@ -1,11 +1,126 @@
-.user_info{
-  font-size: 30px;
-  color: #008BBB;
+.signup-header {
+  text-align: center;
+  margin-top: 50px;
+}
+.signup-field {
+  margin-top: 10px;
+}
+.error-massage {
+  color: red;
+}
+li {
+  color: red;
+}
+.name-tag {
+  color: gray;
+}
+.login-name {
+  font-weight: normal;
+}
+.new-name {
   text-align: center;
 }
-.text_login{
-  font-size: 30px;
-  color: #008BBB;
+.name-field {
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: 1px solid gray;
+  height: 40px;
+  padding: 4px 8px 5px;
+  width: 95%;
 }
-.login_field{
+.email-new-tag {
+  color: gray;
+}
+.login-email {
+  font-weight: normal;
+}
+.new-email {
+  text-align: center;
+}
+.new-email-field {
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: 1px solid gray;
+  height: 40px;
+  padding: 4px 8px 5px;
+  width: 95%;
+}
+.password-new-tag {
+  color: gray;
+}
+.login-password {
+  font-weight: normal;
+}
+.new-password {
+  text-align: center;
+}
+.new-password-field {
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: 1px solid gray;
+  height: 40px;
+  padding: 4px 8px 5px;
+  width: 95%;
+}
+.password-confirmation-tag {
+  color: gray;
+}
+.login-password-confirmation {
+  font-weight: normal;
+}
+.password-confirmation {
+  text-align: center;
+}
+.password-confirmation-field {
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: 1px solid gray;
+  height: 40px;
+  padding: 4px 8px 5px;
+  width: 95%;
+  text-align: center;
+}
+.user-name {
+  margin-top: 70px;
+  text-align: center;
+}
+.users-info {
+  font-size: 20px;
+}
+.info-text {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.info-mail {
+  font-size: 20px;
+}
+.user-info-box {
+ margin: 2em auto;
+ padding: 1em;
+ width: 90%;
+ border-radius: 0.67em;
+ background-color: #fff;
+ border: 1px solid #ccc;
+}
+.blog-box {
+  text-align: center;
+  height: 45px;
+}
+.blog-box:hover{
+  background-color: #CCCCCC;
+  border-radius: 0.67em;
+}
+.new-blog {
+  text-align: left;
+}
+.blog-link {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.icon {
+  float: left;
+  margin-top: 8px;
+  margin-right: 10px;
 }

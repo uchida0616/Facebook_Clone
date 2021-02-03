@@ -1,16 +1,12 @@
-.create-btn{
-  color: #fff;
-  background-color: #f56500;
-  border-bottom: 5px solid #b84c00;
-  font-size: 25px;
+.new-header {
+  text-align: center;
+  margin-top: 100px;
 }
-.create-btn:hover{
-  margin-top: 3px;
-  color: #fff;
-  background: #f56500;
-  border-bottom: 2px solid #b84c00;
-}
-create-btn--shadow {
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+.new-blog-box {
+ margin: 2em auto;
+ padding: 1em;
+ width: 90%;
+ border-radius: 0.67em;
+ background-color: #fff;
+ border: 1px solid #ccc;
 }

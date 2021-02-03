@@ -1,3 +1,75 @@
-// Place all the styles related to the sessions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.login-header {
+  margin-top: 70px;
+}
+.heading {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.note {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+.login {
+  text-align: center;
+  margin-top: 50px;
+}
+.email-tag {
+  float: left;
+}
+.email-text {
+  color: gray;
+  font-weight: normal;
+
+}
+.password-tag {
+  position: relative;
+}
+.password-text {
+  color: gray;
+  font-weight: normal;
+}
+.text-area {
+  display: block;
+  clear: both;
+}
+.email_field {
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: 1px solid gray;
+  height: 40px;
+  padding: 4px 8px 5px;
+  width: 90%;
+}
+.password_field {
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: 1px solid gray;
+  height: 40px;
+  padding: 4px 8px 5px;
+  margin-right: 15px;
+  width: 90%;
+}
+.login_btn {
+  border-radius: 0.67em;
+  margin-top: 50px;
+  width: 60%;
+  background-color: #1877f2;
+  color: white;
+  height: 35px;
+  border: none;
+}
+.email {
+  float: left;
+  width: 50%;
+}
+.password {
+  float: right;
+  width: 50%;
+}
+.signup {
+  text-align: left;
+  margin-top: 20px;
+}

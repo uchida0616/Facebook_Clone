@@ -10,24 +10,32 @@
     </div>
   <% end %>
   <div class="blog">
-    <div class="blog_title">
-      <%= form.label :title, "タイトル" %>
-      <%= form.text_field :title %>
+    <div class="title-tag">
+      <%= form.label :title, "タイトル", class: "title-text" %>
     </div>
-    <br>
-    <div class="blog_field">
-      <p><%= form.label :image, "画像" %></p>
-      <p><%= form.file_field :image, class: "image_form" %></p>
+      <%= form.text_field :title, class: "title-field" %>
+    <br></br>
+    <div class="content-tag">
+      <%= form.label :content, "本文", class: "content-text" %>
     </div>
-    <br>
-    <div class="blog_title">
-      <%= form.label :content, "本文" %>
-      <%= form.text_field :content %>
+      <%= form.text_field :content, class: "content-field" %>
+    <br></br>
+      <label class="image">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-file-earmark-image" viewBox="0 0 16 16">
+          <path d="M6.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+          <path d="M14 14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5V14zM4 1a1 1 0 0 0-1 1v10l2.224-2.224a.5.5 0 0 1 .61-.075L8 11l2.157-3.02a.5.5 0 0 1 .76-.063L13 10V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4z"/>
+        </svg>
+        <div class="image-form">
+        <%= form.file_field :image %>
+      </div>
+        </label>
+        <div class="image_tag">
+          <%= form.label :image, "写真を選択", class: "image-text" %>
     </div>
   </div>
   <br>
   <div class="create">
-    <%= form.submit "Create Blog", class: "create-btn" %>
+    <%= form.submit "投稿", class: "create-btn" %>
   </div>
 <% end %>
 <br>

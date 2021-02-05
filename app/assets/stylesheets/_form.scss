@@ -4,6 +4,9 @@
 .title-text {
   font-weight: normal;
 }
+.title-field-tag {
+  text-align: center;
+}
 .title-field {
   box-sizing: border-box;
   border-radius: 0.67em;
@@ -18,6 +21,9 @@
 .content-text {
   font-weight: normal;
 }
+.content-field-tag {
+  text-align: center;
+}
 .content-field {
   box-sizing: border-box;
   border-radius: 0.67em;
@@ -31,9 +37,13 @@
 }
 .image-text {
   font-weight: normal;
+  margin-left: 10px;
 }
 .image-form {
     display: none;
+}
+.create-btn-area {
+  text-align: center;
 }
 .create-btn {
   color: white;

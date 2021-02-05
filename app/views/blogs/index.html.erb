@@ -1,28 +1,33 @@
-<table border="1", class="blog_all">
-<caption>ブログ一覧</caption>
-<colgroup align="center">
-<thead>
-  <tr>
-    <th>ユーザー名</th>
-    <th>タイトル</th>
-    <th>内容</th>
-  </tr>
-</thead>
-<tfoot>
-  <% @blogs.each do |blog| %>
-    <tr>
-      <td><%= blog.user.name %></td>
-      <td><%= blog.title %></td>
-      <td><%= blog.content %></td>
-      <td><%= image_tag @blog.image.url %></td>
-      <td><%= link_to '詳細を確認する', blog_path(blog.id) %></td>
-      <td><%= link_to "ブログを編集する", edit_blog_path(blog.id) %></td>
-      <td><%= link_to 'ブログを削除する', blog_path(blog.id), method: :delete ,data: { confirm: '本当に削除していいですか？' }%></td>
-    </tr>
-  <% end %>
-</tfoot>
-</table>
-<br>
+<h1>ブログ一覧</h1>
 <div class="blog_url">
   <%= link_to '新しくブログを投稿する', new_blog_path, class: "cp_link" %>
 </div>
+    <% @blogs.each do |blog| %>
+    <div class="index-box">
+      <div class="index-user-name">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg>
+        <p class="user-name-text"><%= blog.user.name %></p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" fill="gray" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg>
+        <p class="blog-title">タイトル:<%= blog.title %></p>
+      </div>
+      <div class="content-box">
+        <p class="blog-content"><%= blog.content %></p>
+      </div>
+      <div class="index-image-area">
+      <% if blog.image.present? %>
+        <%= image_tag blog.image.url, class: "index-image" %>
+      <% else %>
+        <%= image_tag('noimage.png', class: "index-image" ) %>
+      <% end %>
+      </div>
+      <br></br>
+      <%= link_to '詳細を確認する', blog_path(blog.id), class: "index-link" %>
+      <%= link_to "ブログを編集する", edit_blog_path(blog.id), class: "index-link" %>
+      <%= link_to 'ブログを削除する', blog_path(blog.id), method: :delete ,data: { confirm: '本当に削除していいですか？' }, class: "index-link"%>
+    </div>
+  <% end %>

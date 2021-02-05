@@ -1,28 +1,19 @@
 <div class="header">
   <h3>以下の内容で、送信する。</h3>
 </div>
+<div class="confirm-box">
 <%= form_with(model: @blog, url: blogs_path, local: true) do |form| %>
   <%= form.hidden_field :title %>
   <%= form.hidden_field :content %>
-  <div class="image">
-    <div class="image_area">
+  <div class="confirm-title-box">
+    <p class="confirm-title">タイトル:<%= @blog.title %></p>
+  </div>
+      <p class="confirm-content"><%= @blog.content %></p>
       <%= image_tag(@blog.image.url) if @blog.image && @blog.image.url %>
-  </div>
   <%= form.hidden_field :image_cache %>
-  <div class="confirm">
-    <div class="title_text">
-      <p>タイトル:<%= @blog.title %></p>
-    </div>
-    <div class="content_text">
-      <p>本文:<%= @blog.content %></p>
-    </div>
-  </div>
-<div class="flex">
-  <div class="submit">
-    <%= form.submit "登録する", class: "submit-btn" %>
-  </div>
-  <div class="return">
-    <%= form.submit "戻る", name: 'back', class: "return-btn" %>
-  </div>
 </div>
+<div class="confirm-btn-area">
+<%= form.submit "登録する", class: "submit-btn" %>
+    <%= form.submit "戻る", name: 'back', class: "return-btn" %>
 <% end %>
+</div>

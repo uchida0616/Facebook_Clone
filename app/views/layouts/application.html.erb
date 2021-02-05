@@ -9,22 +9,23 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
     <header>
-      <h1 class="block-tit">facebook</h1>
-          <% if logged_in? %>
-          <div class="head-link">
-            <%= link_to "プロフィール", user_path(current_user.id), class: "profile-link" %>
-            <%= link_to "ログアウト", session_path(current_user.id), method: :delete, class: "logout-link" %>
-          </div>
-          <% else %>
-          <div class="head-link">
-            <%= link_to "新規登録", new_user_path, class: "signup-link" %>
-            <%= link_to "ログイン", new_session_path, class: "login-link" %>
-          </div>
-          <% end %>
-          <% flash.each do |key, value| %>
-            <%= content_tag(:div, value, class: "#{key}")%>
-          <% end %>
-          <%= yield %>
+        <h1 class="header-text">facebook</h1>
+        <% if logged_in? %>
+        <div class="head-link">
+          <%= link_to "プロフィール", user_path(current_user.id), class: "profile-link" %>
+          <%= link_to "ログアウト", session_path(current_user.id), method: :delete, class: "logout-link" %>
+        </div>
+        <% else %>
+        <div class="head-link">
+          <%= link_to "新規登録", new_user_path, class: "signup-link" %>
+          <%= link_to "ログイン", new_session_path, class: "login-link" %>
+        </div>
+        <% end %>
+        <% flash.each do |key, value| %>
+          <%= content_tag(:div, value, class: "#{key}")%>
+        <% end %>
+        <%= yield %>
+      </div>
     </header>
     <footer>
       <p>Facebook lnc.<p>

@@ -4,10 +4,7 @@ header {
 }
 footer {
   text-align: center;
-  width: 100%;
   color: gray;
-  position: absolute;
-  bottom: 0;
 }
 body {
   background-color: #EEEEEE;
@@ -15,14 +12,14 @@ body {
 a:hover {
   color: black;
 }
-.block-tit {
-  margin-top: 0;
+.header-text {
   font-family: San Francisco;
   color: white;
-  position: relative;
-  top: 20px;
-  left: 120px;
   font-weight: bold;
+  margin-top: 0;
+  margin-left: 30px;
+  position: relative;
+  top: 25px;
 }
 .head-link {
   display: block;

@@ -1,0 +1,49 @@
+.index-box {
+  height: auto;
+  margin: 4em auto;
+  padding: 1em;
+  width: 80%;
+  border-radius: 0.67em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.index-user-name {
+  display: inline-block;
+  display: table;
+  table-layout: fixed;
+}
+.bi bi-person-circle {
+  display: table-cell;
+}
+.user-name-text {
+  display: table-cell;
+  position: relative;
+  left: 10px;
+  bottom: 7px;
+  font-weight: bold;
+}
+.bi bi-caret-right-fill {
+  display: table-cell;
+
+}
+.blog-title {
+  display: table-cell;
+  position: relative;bottom: 4px;
+  font-weight: bold;
+}
+.content-box {
+  margin-top: 5px;
+  width: 100%;
+  border-top: 1px solid #CCCCCC;
+}
+.blog-content {
+  margin-top: 5px;
+}
+.index-image {
+  width: 100%;
+min-width: 300px;
+height: auto;
+}
+.index-link {
+  color: black;
+}

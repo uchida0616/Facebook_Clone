@@ -1,1 +1,55 @@
-
+.confirm-box {
+  height: auto;
+  margin: 4em auto;
+  padding: 1em;
+  width: 80%;
+  border-radius: 0.67em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  }
+.confirm-title {
+  color: black;
+  font-weight: normal;
+}
+.confirm-title-box {
+  margin-top: 5px;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+}
+.confirm-content {
+  color: black;
+  font-weight: normal;
+  text-align: left;
+  font-size: 20px;
+}
+.confirm-btn-area{
+  text-align: center;
+}
+.submit-btn {
+  color: white;
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: none;
+  background-color: silver;
+  height: 30px;
+  padding: 4px 8px 5px;
+  width: 70%;
+  text-align: center;
+  }
+  .submit-btn:hover {
+    background-color: #1877F2;
+  }
+.return-btn {
+  color: white;
+  box-sizing: border-box;
+  border-radius: 0.67em;
+  border: none;
+  background-color: silver;
+  height: 30px;
+  margin-top: 20px;
+  padding: 4px 8px 5px;
+  width: 70%;
+}
+.return-btn:hover {
+  background-color: #1877F2;
+}

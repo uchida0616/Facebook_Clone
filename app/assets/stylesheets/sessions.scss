@@ -53,13 +53,18 @@
   width: 90%;
 }
 .login_btn {
-  border-radius: 0.67em;
-  margin-top: 50px;
-  width: 60%;
-  background-color: #1877f2;
   color: white;
-  height: 35px;
+  box-sizing: border-box;
+  border-radius: 0.67em;
   border: none;
+  background-color: silver;
+  height: 30px;
+  margin-top: 80px;
+  padding: 4px 8px 5px;
+  width: 80%;
+}
+.login_btn:hover {
+  background-color: #1877F2;
 }
 .email {
   float: left;

@@ -15,13 +15,10 @@ CarrierWave.configure do |config|
   config.fog_attributes = {'Cache-Control' => 'public, max-age=86400'}
   case Rails.env
     when 'production'
-      config.fog_directory = 'new-facebookclone-production'
-      config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/new-facebookclone-production'
+      config.fog_directory = 'facebookcloneproduction'
+      config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/facebookcloneproduction'
     when 'development'
-      config.fog_directory = 'new-facebookclone-development'
-      config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/new-facebookclone-development'
-    when 'test'
- config.fog_directory = 'new-facebookclone-test'
- config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/new-facebookclone-test'
+      config.fog_directory = 'facebookclone-development'
+      config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/facebookclone-development'
   end
 end

@@ -16,7 +16,6 @@ gem 'bcrypt', '3.1.11'
 gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
 gem 'fog-aws'
-gem 'dotenv-rails'
 gem 'dotenv-rails' # 開発環境で環境変数を操作するのに必要
 gem 'unicorn' # アプリケーションサーバのunicorn
 gem 'mini_racer', platforms: :ruby # デプロイ時に必要

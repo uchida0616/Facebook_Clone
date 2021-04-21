@@ -1,14 +1,14 @@
 # config valid only for current version of Capistrano
 lock '3.6.0'
 # デプロイするアプリケーション名
-set :application, 'facebookclone'
+set :application, 'Facebook_clone'
 # cloneするgitのレポジトリ
 # （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
 set :repo_url, 'https://github.com/uchida0616/Facebook_clone.git'
 # deployするブランチ。デフォルトでmainを使用している場合、masterをmainに変更してください。
 set :branch, ENV['BRANCH'] || 'master'
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/facebookclone'
+set :deploy_to, '/var/www/facebook_clone'
 # シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
